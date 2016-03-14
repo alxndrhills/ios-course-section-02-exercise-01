@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blackCat: UIImageView!
+    
+    @IBOutlet weak var whiteCat: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func blackCatPressed(sender: AnyObject) {
+        blackCat.hidden = !blackCat.hidden
+    }
 
+    @IBAction func whiteCatPressed(sender: AnyObject) {
+        whiteCat.hidden = !whiteCat.hidden
+    }
+
+    
 }
 
